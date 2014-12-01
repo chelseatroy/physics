@@ -11,7 +11,7 @@ var _ = Describe("Physics", func() {
   Describe("Force", func() {
         Context("With mass and acceleration", func() {
             It("should calculate force", func() {
-                Expect(Force(2.5, 4.0)).To(Equal(10.0))
+                Expect(Force(2.5, 4.0, 1)).To(Equal(10.0))
             })
         })     
   })
@@ -19,7 +19,7 @@ var _ = Describe("Physics", func() {
    Describe("Pendulums", func() {
         Context("With length of pendulum", func() {
             It("should calculate period", func() {
-                Expect(PendulumPeriod(1.0)).To(Equal(2.007))
+                Expect(PendulumPeriod(1.0, 3)).To(Equal(2.007))
             })
         })     
   })
